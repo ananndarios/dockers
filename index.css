@@ -1,0 +1,20 @@
+.clearfix > .form-group > .control-label {
+    font-family: "Times New Roman", Times, serif;
+    font-weight: bold;
+    font-size: 18px;
+    color: #2574a9;
+}
+
+.img-responsive {
+    margin: 0 0 0 0;
+}
+.col-xs-12 > .clearfix > .form-group > .control-label {
+    color: #1f3a93;
+}
+
+html > body {
+    background-image: linear-gradient(rgb(255, 255, 255) 35%, rgb(151, 179, 220) 100%);
+}
+.icon-bar{
+    background: #1f3a93;
+}
