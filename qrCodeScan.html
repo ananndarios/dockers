@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
     <link id="main-sheet" rel="stylesheet" href="http://penseonline.com.br/sistemas/architect/themes/yeti/stylesheet.css">
+    <script type="text/javascript" src="instascan.min.js"></script> 
 </head>
 
 <body class="text-center" id="">
@@ -57,15 +58,29 @@
 
 
 <h1>OIIIIII</h1>
+
+<video id= 'preview'> aqui vai a camera </video>
+
 <script>
-    var qrcode = new QRCode("test", {
-    text: "http://jindo.dev.naver.com/collie",
-    width: 128,
-    height: 128,
-    colorDark : "#000000",
-    colorLight : "#ffffff",
-    correctLevel : QRCode.CorrectLevel.H
-});
+    let scanner = new Instascan.Scanner(
+        {
+            video: document.getElementById('preview')
+        }
+    );
+    
+    scanner.addListener('scan', function(content) {
+        alert('Escaneou o conteudo: ' + content);
+        window.open(content, "_blank");
+    });
+    
+    Instascan.Camera.getCameras().then(cameras => 
+    {
+        if(cameras.length > 0){
+            scanner.start(cameras[0]);
+        } else {
+            console.error("Não existe câmera no dispositivo!");
+        }
+    });
 </script>
 
 </body>
