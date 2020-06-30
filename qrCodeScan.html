@@ -44,11 +44,30 @@
     <div class="col-xs-12 hidden-sm hidden-md hidden-lg">
         <br>
     </div>
-    <button onclick="window.location='qrCodeScan.html';" class="btn btn-primary " style="height: 64px; width: 350px; overflow: hidden; float: none!important; margin: 0 auto!important;"> <i class="fa fa-2x fa-qrcode"></i> &nbsp; QR Code Scan</button>
+    <button class="btn btn-primary " style="height: 64px; width: 350px; overflow: hidden; float: none!important; margin: 0 auto!important; background-color: brown;"> <i class="fa fa-2x fa-qrcode"></i> &nbsp; QR Code Scan</button>
     <div class="col-xs-12 hidden-sm hidden-md hidden-lg">
         <br>
     </div>
     <button class="btn btn-primary" style="height: 64px; width: 350px; overflow: hidden; float: none!important; margin: 0 auto!important;"> <i class="fa fa-2x fa-play"></i> &nbsp; Treinamentos</button>
+
+    <div id="qrcode"></div>
+    <script type="text/javascript">
+    new QRCode(document.getElementById("qrcode"), "http://jindo.dev.naver.com/collie");
+    </script>
+
+
+<h1>OIIIIII</h1>
+<script>
+    var qrcode = new QRCode("test", {
+    text: "http://jindo.dev.naver.com/collie",
+    width: 128,
+    height: 128,
+    colorDark : "#000000",
+    colorLight : "#ffffff",
+    correctLevel : QRCode.CorrectLevel.H
+});
+</script>
+
 </body>
 
 </html>
