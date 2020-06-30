@@ -4,7 +4,9 @@
   "description": "'Wilson, Sons Academy'",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm run open",
+    "open": "concurrently \"http-server -a localhost -p 8080\" \"open http://localhost:8080/build\""
   },
   "repository": {
     "type": "git",
@@ -17,7 +19,12 @@
   },
   "homepage": "https://github.com/ananndarios/dockers#readme",
   "dependencies": {
+    "instascan": "^1.0.0",
     "qrcode.react": "^1.0.0",
     "react": "^16.13.1"
+  },
+  "devDependencies": {
+    "concurrently": "^5.2.0",
+    "http-server": "^0.12.3"
   }
 }
