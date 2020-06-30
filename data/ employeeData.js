@@ -10,6 +10,6 @@ const data = {
   }, {
     "id": 3,
     "name": "",
-    "password": "",
+    "password": ""
   },
 ]}
