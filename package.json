@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/ananndarios/dockers/issues"
   },
-  "homepage": "https://github.com/ananndarios/dockers#readme"
+  "homepage": "https://github.com/ananndarios/dockers#readme",
+  "dependencies": {
+    "react": "^16.13.1"
+  }
 }
