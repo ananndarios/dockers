@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/ananndarios/dockers#readme",
   "dependencies": {
+    "qrcode.react": "^1.0.0",
     "react": "^16.13.1"
   }
 }
