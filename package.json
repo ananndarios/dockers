@@ -1,0 +1,19 @@
+{
+  "name": "dockers",
+  "version": "1.0.0",
+  "description": "'Wilson, Sons Academy'",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ananndarios/dockers.git"
+  },
+  "author": "Dockers",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ananndarios/dockers/issues"
+  },
+  "homepage": "https://github.com/ananndarios/dockers#readme"
+}
