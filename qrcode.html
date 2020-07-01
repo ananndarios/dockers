@@ -7,11 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
     <link id="main-sheet" rel="stylesheet" href="http://penseonline.com.br/sistemas/architect/themes/yeti/stylesheet.css">
-    <script type="text/javascript" src="instascan.min.js"></script> 
 </head>
 
 <body class="text-center" id="">
-
+   
     <div class="navbar">
         <div class="container">
             <div class="navbar-header responsive-logo">
@@ -51,37 +50,29 @@
     </div>
     <button class="btn btn-primary" style="height: 64px; width: 350px; overflow: hidden; float: none!important; margin: 0 auto!important;"> <i class="fa fa-2x fa-play"></i> &nbsp; Treinamentos</button>
 
-    <div id="qrcode"></div>
-    <script type="text/javascript">
-    new QRCode(document.getElementById("qrcode"), "http://jindo.dev.naver.com/collie");
-    </script>
 
+  
+  <video id= 'cam' autoplay="autoplay"  style="transform: scaleX(-1)"></video>
 
-<h1>OIIIIII</h1>
+ <script type="text/javascript" src="instascan.min.js"></script> 
 
-<video id= 'preview'> aqui vai a camera </video>
-
-<script>
-    let scanner = new Instascan.Scanner(
-        {
-            video: document.getElementById('preview')
-        }
-    );
+   <script>   
+      const scanner = new Instascan.Scanner({
+        video  : document.getElementById('cam'),
     
-    scanner.addListener('scan', function(content) {
+      });
+    
+      scanner.addListener('scan', function(content) {
         alert('Escaneou o conteudo: ' + content);
         window.open(content, "_blank");
-    });
+      });
     
-    Instascan.Camera.getCameras().then(cameras => 
-    {
-        if(cameras.length > 0){
+       Instascan.Camera.getCameras().then(cameras => {
+         if(cameras.length > 0){
             scanner.start(cameras[0]);
-        } else {
-            console.error("Não existe câmera no dispositivo!");
-        }
-    });
-</script>
+          } else {console.error("Não existe câmera no dispositivo!")}  
+        });
+   </script>
 
 </body>
 
