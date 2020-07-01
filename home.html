@@ -5,10 +5,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-    <link id="main-sheet" rel="stylesheet" href="http://penseonline.com.br/sistemas/architect/themes/yeti/stylesheet.css"> -->
-    <link rel="manifest" href="../manifest.webmanifest">
-
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link id="main-sheet" rel="stylesheet" href="http://penseonline.com.br/sistemas/architect/themes/yeti/stylesheet.css">
 </head>
 
 <body class="text-center" id="">
@@ -38,11 +36,11 @@
             </nav>
         </div>
     </div>
-    <!-- <img src="http://penseonline.com.br/sistemas/architect/assets/images/uploads/S18HOeDNa7RrLKv.png" class="img-responsive text-center" style="height: 328px; overflow: hidden; width: 506.238px; left: 1px; position: relative; float: none; margin: 0 auto;"> -->
+    <img src="http://penseonline.com.br/sistemas/architect/assets/images/uploads/S18HOeDNa7RrLKv.png" class="img-responsive text-center" style="height: 328px; overflow: hidden; width: 506.238px; left: 1px; position: relative; float: none; margin: 0 auto;">
     <div class="col-xs-12 hidden-sm hidden-md hidden-lg">
         <br>
     </div>
-    <a href="../media">
+    <a href="video.html">
     <button class="btn btn-primary " style="height: 64px; width: 350px; overflow: hidden; float: none!important; margin: 0 auto!important;"> <i class="fa fa-2x fa-qrcode"></i> &nbsp; Minhas aulas</button>
     </a>
     
@@ -54,48 +52,6 @@
         <br>
     </div>
     <button class="btn btn-primary" style="height: 64px; width: 350px; overflow: hidden; float: none!important; margin: 0 auto!important;"> <i class="fa fa-2x fa-play"></i> &nbsp; Treinamentos</button>
-    <button class="add-button">Add to home screen</button>
-
 </body>
-
-<script>
-    // Register service worker to control making site work offline
-
-if('serviceWorker' in navigator) {
-  navigator.serviceWorker
-           .register('/sw.js')
-           .then(function() { console.log('Service Worker Registered'); });
-}
-    // Code to handle install prompt on desktop
-
-let deferredPrompt;
-const addBtn = document.querySelector('.add-button');
-addBtn.style.display = 'none';
-
-window.addEventListener('beforeinstallprompt', (e) => {
-  // Prevent Chrome 67 and earlier from automatically showing the prompt
-  e.preventDefault();
-  // Stash the event so it can be triggered later.
-  deferredPrompt = e;
-  // Update UI to notify the user they can add to home screen
-  addBtn.style.display = 'block';
-
-  addBtn.addEventListener('click', (e) => {
-    // hide our user interface that shows our A2HS button
-    addBtn.style.display = 'none';
-    // Show the prompt
-    deferredPrompt.prompt();
-    // Wait for the user to respond to the prompt
-    deferredPrompt.userChoice.then((choiceResult) => {
-        if (choiceResult.outcome === 'accepted') {
-          console.log('User accepted the A2HS prompt');
-        } else {
-          console.log('User dismissed the A2HS prompt');
-        }
-        deferredPrompt = null;
-      });
-  });
-});
-</script>
 
 </html>
