@@ -8,19 +8,16 @@
 </head>
 <body>
   <video id=video autobuffer autoplay="true" controls="controls">
-    
-    
-    
+  
   </video>
   
 </body>
 <script>
 
-  const url = window.location
+  const url = window.location.hash.substr(1)
   console.log(url);
   
-  let video = "../media/wilson-sons-1.mp4"
-
+  let video = "../media/" + url + '.mp4'
 
   document.querySelector('#video').innerHTML = `
   <source src=${video}>
