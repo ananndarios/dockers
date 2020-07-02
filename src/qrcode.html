@@ -19,7 +19,7 @@
 
   
 
- <script type="text/javascript" src="instascan.min.js"></script> 
+ <script type="text/javascript" src="../instascan.min.js"></script> 
 
    <script>   
       const scanner = new Instascan.Scanner({
@@ -28,13 +28,16 @@
       });
     
       scanner.addListener('scan', function(content) {
+        console.log("escaneando..")
         alert('Escaneou o conteudo: ' + content);
-        window.open(content, "_blank");
+        window.location= 'video.html#' + content
       });
     
        Instascan.Camera.getCameras().then(cameras => {
          if(cameras.length > 0){
             scanner.start(cameras[0]);
+            console.log('rodou o cameras' + cameras.length)
+
           } else {console.error("Não existe câmera no dispositivo!")}  
         });
    </script>
