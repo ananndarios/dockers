@@ -29,16 +29,20 @@
     
       scanner.addListener('scan', function(content) {
         console.log("escaneando..")
-        alert('Escaneou o conteudo: ' + content);
+
         window.location= 'video.html#' + content
       });
     
        Instascan.Camera.getCameras().then(cameras => {
-         if(cameras.length > 0){
-            scanner.start(cameras[0]);
+         if(cameras.length > 1){
+            scanner.start(cameras[1]);
             console.log('rodou o cameras' + cameras.length)
 
-          } else {console.error("Não existe câmera no dispositivo!")}  
+          } else if (cameras.length > 0){
+            scanner.start(cameras[0]);
+            console.log('rodou o cameras' + cameras.length)
+          }        
+          else {console.error("Não existe câmera no dispositivo!")}  
         });
    </script>
 
