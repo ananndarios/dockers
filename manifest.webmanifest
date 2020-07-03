@@ -10,7 +10,7 @@
   "orientation": "any",
   "icons": [
     {
-      "src": "/media/icon.png",
+      "src": "/media/icon.jpg",
       "sizes": "512x512",
       "type": "image/png"
     }
