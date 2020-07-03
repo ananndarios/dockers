@@ -9,6 +9,7 @@
 
 body{
     background: #F3F0FE;
+    padding: 16px;
   
 }
 
@@ -79,6 +80,7 @@ input:focus{
     display: flex;
     justify-content: space-around;
     background-color: white;
+    box-shadow: 10px 10px 18px -5px rgba(0,0,0,0.75);
  }
 .icon {
     width: 30px;
@@ -90,26 +92,82 @@ input:focus{
     width: 28px;
 }
 
-/* CARD-AULAS */
+@media only screen and (min-width: 600px) {
+    .icon {
+        width: 50px;
+    }
+    .icon:hover{
+        width: 45px;
+    }
+  }
+/*AULAS */
 
-.card{
-    width: 300px;
-    /* background-color: white;
-    height: 200px;
-    border: 1px solid white;
-    border-radius: 4px; */
-    float: none; 
-    margin: 0 auto;
+.class{
+    font-size: 20px;
+    list-style-type: none;
 }
-
+.card-title {
+    border: solid 1px #BDC3C7;
+    background: white;
+    border-radius: 4px;
+    text-align: center;
+    margin: 4px;
+    line-height: 10px;
+    padding: 4px;
+}
 .logo-aulas{
     width: 200px;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 30px;
+   margin-bottom: 50px;
 }
 
 .title-aula{
     text-align: center;
 }
+.title-head{
+    color:#001C43;
+    font-size: 20px;
+    float: right;
+}
+.icon-head{
+    width: 18px;
+    float: right;
+    padding-right: 2px;
+}
+
+@media only screen and (min-width: 600px) {
+    .title-content{
+        text-align: center;
+        font-size: 40px;
+    }
+    .class{
+        font-size: 30px;
+        list-style-type: none;
+    }
+    
+    
+  }
+
+.title-content{
+    text-align: center;
+}
+
+/* NEWHOME */
+.button-home{
+    padding: 20px;
+    border: none;
+    width: 100%;
+    background: #001C43;
+    border-radius: 8px;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 17px;
+    letter-spacing: 0.015em;
+    box-shadow: 10px 10px 23px -9px rgba(0,0,0,0.75);
+} 
