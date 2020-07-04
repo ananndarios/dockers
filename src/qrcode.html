@@ -5,20 +5,29 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-</head>
+    <link rel="stylesheet" href="./index.css">
+  </head>
+<body class="text-center" id="">  
+  <img class="logo" src="../media/logo.png" alt="Logo Wilson e Sons" />
+  <h2 class="title-content"> Escaneie o QRCode </h2>
 
-
-<body class="text-center" id="">
-     
-  <img width="50%" src="/media/logo.png" alt="Logo Wilson e Sons" />
-  <h2> Escaneie o QRCode </h2>
-
-  <div>
-     <video id= 'cam' autoplay="autoplay"  style="transform: scaleX(-1)"></video>
+  <div >
+     <video class="qrcode" id= 'cam' autoplay="autoplay"  style="transform: scaleX(-1)"></video>
   </div>
-
-  
-
+  <nav class="nav">
+		<a href='./home.html'>
+			<img class="icon" src="../media/icons/icons8-casa (1).svg" alt="home"/>
+		</a>
+		<a href="qrcode.html">
+			<img class="icon" src="../media/icons/icons8-código-qr-64.png" alt="qrcode"/>
+		</a>
+		<a href="./aulas.html">
+			<img class="icon" src="../media/icons/icons8-livro-50 (1).png" alt="aulas"/>
+		</a>
+		<a href="./treinamento.html">
+			<img class="icon" src="../media/icons/icons8-pesquisar-64 (1).png" alt="treinamentos"/>
+		</a>
+	</nav>
  <script type="text/javascript" src="/js/instascan.min.js"></script> 
 
    <script>   
