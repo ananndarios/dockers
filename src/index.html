@@ -1,12 +1,17 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 
 <head>
     <meta charset="utf-8">
+    <meta name="theme-color" content="#005f97">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="sortcut icon" href="../media/logoApp.png" type="image/gif"/>
     <link rel="stylesheet" href="./index.css">
+    <link rel="manifest" href="../manifest.webmanifest">
+	<title>Wilson Sons Academy</title>
+
+
 </head>
 
 <body class="" id="">
@@ -44,6 +49,14 @@
 <script src="../js/jquery.js"></script>
 <script src="./bootstrap.min.js"></script>
 <script>
+    // Register service worker to control making site work offline
+    if('serviceWorker' in navigator) {
+    navigator.serviceWorker
+        .register('/sw.js')
+        .then(function() { console.log('Service Worker Registered'); });
+}
+
+
     $(document).ready(function(){
         $("input[name='login']").blur(function(){
             if($(this).val() == ""){

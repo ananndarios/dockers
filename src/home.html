@@ -1,11 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 <head>
     <meta charset="utf-8">
+    <meta name="theme-color" content="#005f97">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="sortcut icon" href="../media/logoApp.png" type="image/gif"/>
     <link rel="stylesheet" href="./index.css">
+    <link rel="manifest" href="../manifest.webmanifest">
+	<title>Wilson Sons Academy</title>
+
+
 </head>
 <body class="text-center" id="">
   <img class="logo" src="../media/icons/icon.jpeg" alt="logo">
@@ -29,12 +34,12 @@
 
 <script>
     // Register service worker to control making site work offline
-
-if('serviceWorker' in navigator) {
-  navigator.serviceWorker
-           .register('/sw.js')
-           .then(function() { console.log('Service Worker Registered'); });
+    if('serviceWorker' in navigator) {
+    navigator.serviceWorker
+        .register('/sw.js')
+        .then(function() { console.log('Service Worker Registered'); });
 }
+
     // Code to handle install prompt on desktop
 
 let deferredPrompt;
@@ -44,11 +49,12 @@ addBtn.style.display = 'none';
 window.addEventListener('beforeinstallprompt', (e) => {
   // Prevent Chrome 67 and earlier from automatically showing the prompt
   e.preventDefault();
+  
   // Stash the event so it can be triggered later.
   deferredPrompt = e;
   // Update UI to notify the user they can add to home screen
   addBtn.style.display = 'block';
-
+  
   addBtn.addEventListener('click', (e) => {
     // hide our user interface that shows our A2HS button
     addBtn.style.display = 'none';

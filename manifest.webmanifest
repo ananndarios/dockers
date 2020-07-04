@@ -5,7 +5,7 @@
   "background_color": "#39b2bd",
   "display": "standalone",
   "scope": "/src",
-  "start_url": "/src/home.html",
+  "start_url": "/src/index.html",
   "lang": "pt-BR",
   "orientation": "any",
   "icons": [
