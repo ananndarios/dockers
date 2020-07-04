@@ -21,9 +21,6 @@ function stat(path){
         })
     })
 }
-// stat('./').then(stat=>{console.log(stat.isFile())})
-
-// readdir('./').then((paths)=> console.log(paths))
 
 async function lista(){
     const paths = await readdir('./')
@@ -31,7 +28,7 @@ async function lista(){
     const stats = await Promise.all(statsPromises)
     const pathWithIsFile = stats.map(path => ({path: path.path, isFile: path.stat.isFile()}))
     const files = pathWithIsFile.filter(path => path.isFile) 
-    console.log(files)
+    //console.log(files)
 }
 lista()
 
