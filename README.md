@@ -8,12 +8,13 @@
 ## Protótipo 
 
 Inicialmente desenhamos soluções em papel, e após desenhamos alguma ideias no FIGMA.
-
+<div>
 <img src='media/readme/tablet1.jpeg' height = "150" width = "150"  />
 <img src='media/readme/mobile1.jpeg' height = "150" width = "150"  />
 <img src='media/readme/mobile2.jpeg' height = "150" width = "150"  />
 <img src='media/readme/mobile3.jpeg' height = "150" width = "150"  />
 <img src='media/readme/mobile4.jpeg' height = "150" width = "150"  />
+</div>
 <img src='media/readme/prototipo0.png' height = "300" width = "150" />
 <img src='media/readme/prototipo2.png' height = "300" width = "150" /> 
 
