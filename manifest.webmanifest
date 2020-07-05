@@ -4,14 +4,14 @@
   "theme_color": "#005f97",
   "background_color": "#39b2bd",
   "display": "standalone",
-  "scope": "/",
+  "scope": "/dockers",
   "start_url": "/dockers/src/index.html",
   "lang": "pt-BR",
   "orientation": "any",
   "icons": [
     {
-      "src": "./media/logoApp.png",
-      "sizes": "512x512",
+      "src": "/media/logoApp.png",
+      "sizes": "360x360",
       "type": "image/png"
     }
   ]
