@@ -5,12 +5,12 @@
   "background_color": "#39b2bd",
   "display": "standalone",
   "scope": "/dockers",
-  "start_url": "/src/index.html",
+  "start_url": "/dockers/src/index.html",
   "lang": "pt-BR",
   "orientation": "any",
   "icons": [
     {
-      "src": "/media/logoApp.png",
+      "src": "/dockers/media/logoApp.png",
       "sizes": "360x360",
       "type": "image/png"
     }
