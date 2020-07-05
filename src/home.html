@@ -37,7 +37,7 @@
     // Register service worker to control making site work offline
     if('serviceWorker' in navigator) {
     navigator.serviceWorker
-        .register('../../dockers/sw.js')
+        .register('/dockers/sw.js', {scope: '/dockers/'})
         .then(function() { console.log('Service Worker Registered'); });
 }
 

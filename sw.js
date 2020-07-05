@@ -3,12 +3,12 @@ self.addEventListener('install', function(e) {
  e.waitUntil(
    caches.open('video-store').then(function(cache) {
      return cache.addAll([
-       '/src/home.html',       
-       '/src/index.html',
-       '/src/index.css',
-       '/src/aulas.html',
-       '/src/treinamento.html',
-       '/media/'
+       'dockers/src/home.html',       
+       'dockers/src/index.html',
+       'dockers/src/index.css',
+       'dockers/src/aulas.html',
+       'dockers/src/treinamento.html',
+       'dockers/media/'
 
      ])
      .then(() => console.log('Assets added to cache'))
