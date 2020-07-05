@@ -3,7 +3,6 @@ self.addEventListener('install', function(e) {
  e.waitUntil(
    caches.open('video-store').then(function(cache) {
      return cache.addAll([
-       'src/',
        '/src/home.html',       
        '/src/index.html',
        '/src/index.css',
@@ -13,7 +12,7 @@ self.addEventListener('install', function(e) {
 
      ])
      .then(() => console.log('Assets added to cache'))
-     .catch(err => console.log('Error while fetching assets', err));;
+     .catch(err => console.log('Error while fetching assets', err))
    })
  );
 });
@@ -23,5 +22,5 @@ self.addEventListener('fetch', function(e) {
     caches.match(e.request).then(function(response) {
       return response || fetch(e.request);
     })
-  );
+   );
 });
