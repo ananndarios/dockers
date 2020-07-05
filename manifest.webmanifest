@@ -4,8 +4,8 @@
   "theme_color": "#005f97",
   "background_color": "#39b2bd",
   "display": "standalone",
-  "scope": "/dockers",
-  "start_url": "/dockers/src/index.html",
+  "scope": "/",
+  "start_url": "/src/index.html",
   "lang": "pt-BR",
   "orientation": "any",
   "icons": [
