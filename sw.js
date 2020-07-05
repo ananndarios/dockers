@@ -8,7 +8,10 @@ self.addEventListener('install', function(e) {
        'dockers/src/index.css',
        'dockers/src/aulas.html',
        'dockers/src/treinamento.html',
-       'dockers/media/'
+       'dockers/src/qrcode.html',
+       'dockers/media/',
+       'dockers/media/wilson-sons-1.mp4',
+       'dockers/media/wilson-sons-2.mp4'
 
      ])
      .then(() => console.log('Assets added to cache'))
